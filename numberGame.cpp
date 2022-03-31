@@ -21,45 +21,48 @@ int main() {
     
     NUMBER=atoi(NUMBER_AS_STRING.c_str());
     // process
-    if (NUMBER == 10){
-        std::cout << "You win!";
-    } else if(NUMBER == 11){
-        std::cout << "You win!";
-    } else if(NUMBER == 12){
-        std::cout << "You win!";
-    } else {
-        switch (NUMBER_AS_STRING) {
+    switch (NUMBER_AS_STRING) {
          case '1' :
-                std::cout << "January" << std::endl;
-                break;
-            case '2' :
-                std::cout << "February" << std::endl;
-                break;
-            case '3' :
-                std::cout << "March" << std::endl;
-                break;
-            case '4' :
-                std::cout << "April" << std::endl;
-                break;
-            case '5' :
-                std::cout << "May" << std::endl;
-                break;
-            case '6' :
-                std::cout << "June" << std::endl;
-                break;
-            case '7' :
-                std::cout << "July" << std::endl;
-                break;
-            case '8' :
-                std::cout << "August" << std::endl;
-                break;
-            case '9' :
-                std::cout << "September" << std::endl;
-                break;
-            default :
-                std::cout << "Not a month" << std::endl;
+           std::cout << "January" << std::endl;
+           break;
+        case '2' :
+            std::cout << "February" << std::endl;
+            break;
+        case '3' :
+            std::cout << "March" << std::endl;
+            break;
+        case '4' :
+            std::cout << "April" << std::endl;
+            break;
+        case '5' :
+            std::cout << "May" << std::endl;
+            break;
+        case '6' :
+            std::cout << "June" << std::endl;
+            break;
+        case '7' :
+            std::cout << "July" << std::endl;
+            break;
+        case '8' :
+            std::cout << "August" << std::endl;
+            break;
+        case '9' :
+            std::cout << "September" << std::endl;
+            break;
+        case 'A' :
+            std::cout << "September" << std::endl;
+            break;
+        case 'B' :
+            std::cout << "September" << std::endl;
+            break;
+        case 'C' :
+            std::cout << "September" << std::endl;
+            break;
+            
+        default :
+            std::cout << "Not a month" << std::endl;
         }
-    }
+    
     std::cout << "" << std::endl;
     std::cout << "Done.";
 }
