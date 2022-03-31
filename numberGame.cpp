@@ -2,28 +2,63 @@
 //
 // Created by Devin Jhu
 // Created on March 2022
-// The number game
+// The month finder
 
 #include <iostream>
+#include <string>
 
 int main() {
-    // this function is a guessing game
-    int NumberAnswer = 7;
-    int Guess;
+    // this function is a month finder
+    std:: string NUMBER_AS_STRING;
+    int NUMBER;
 
-    std::cout << "The number game";
-    std::cout << "" << std::endl;
-    std::cout << "Guess a number between 1 and 9";
+    std::cout << "The month finder";
+
     // input
     std::cout << "" << std::endl;
     std::cout << "enter number: ";
-    std::cin >> Guess;
-
+    std::cin >> NUMBER_AS_STRING;
+    
+    NUMBER=atoi(NUMBER_AS_STRING.c_str());
     // process
-    if (Guess == NumberAnswer) {
+    if (NUMBER == 10){
+        std::cout << "You win!";
+    } else if(NUMBER == 11){
+        std::cout << "You win!";
+    } else if(NUMBER == 12){
         std::cout << "You win!";
     } else {
-        std::cout << "You lose :(";
+        switch (NUMBER_AS_STRING) {
+         case '1' :
+                std::cout << "January" << std::endl;
+                break;
+            case '2' :
+                std::cout << "February" << std::endl;
+                break;
+            case '3' :
+                std::cout << "March" << std::endl;
+                break;
+            case '4' :
+                std::cout << "April" << std::endl;
+                break;
+            case '5' :
+                std::cout << "May" << std::endl;
+                break;
+            case '6' :
+                std::cout << "June" << std::endl;
+                break;
+            case '7' :
+                std::cout << "July" << std::endl;
+                break;
+            case '8' :
+                std::cout << "August" << std::endl;
+                break;
+            case '9' :
+                std::cout << "September" << std::endl;
+                break;
+            default :
+                std::cout << "Not a month" << std::endl;
+        }
     }
     std::cout << "" << std::endl;
     std::cout << "Done.";
